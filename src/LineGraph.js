@@ -83,8 +83,8 @@ function LineGraph({ casesType = "cases" }) {
             datasets: [
               {
                 data: data,
-                backgroundColor: "rgba(204,16,52,0.5)",
-                borderColor: "#CC1034",
+                backgroundColor: casesType === "recovered" ? "lightgreen": "rgba(204,16,52,0.5)",
+                borderColor: casesType === "recovered" ? "green": "#CC1034",
                 fill: true,
               },
             ],
