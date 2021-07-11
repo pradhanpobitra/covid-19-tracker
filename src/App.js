@@ -97,7 +97,7 @@ function App() {
             isRed={true}
             active={casesType === 'cases'}
             onClick={(e) => setCasesType("cases")}
-            title="Total Cases"
+            title="Total cases"
             total={prettyPrintStat(countryInfo.cases)}
             cases={prettyPrintStat(countryInfo.todayCases)}
           />
